@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		11D199AF2F471F2900BF920E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 11D199AE2F471F2300BF920E /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		11D199302F46751E00BF920E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,13 +23,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		11D199322F46751E00BF920E /* lab-1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "lab-1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D199322F46751E00BF920E /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab1; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D199782F47020F00BF920E /* BookCLITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCLITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D199AE2F471F2300BF920E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		11D199342F46751E00BF920E /* lab-1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "lab-1";
+			sourceTree = "<group>";
+		};
+		11D199792F47020F00BF920E /* BookCLITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BookCLITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,13 +49,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11D199752F47020F00BF920E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		11D199292F46751E00BF920E = {
 			isa = PBXGroup;
 			children = (
+				11D199AE2F471F2300BF920E /* README.md */,
 				11D199342F46751E00BF920E /* lab-1 */,
+				11D199792F47020F00BF920E /* BookCLITests */,
 				11D199332F46751E00BF920E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +72,8 @@
 		11D199332F46751E00BF920E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11D199322F46751E00BF920E /* lab-1 */,
+				11D199322F46751E00BF920E /* lab1 */,
+				11D199782F47020F00BF920E /* BookCLITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11D199312F46751E00BF920E /* lab-1 */ = {
+		11D199312F46751E00BF920E /* lab1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11D199392F46751E00BF920E /* Build configuration list for PBXNativeTarget "lab-1" */;
+			buildConfigurationList = 11D199392F46751E00BF920E /* Build configuration list for PBXNativeTarget "lab1" */;
 			buildPhases = (
 				11D1992E2F46751E00BF920E /* Sources */,
 				11D1992F2F46751E00BF920E /* Frameworks */,
@@ -75,12 +96,34 @@
 			fileSystemSynchronizedGroups = (
 				11D199342F46751E00BF920E /* lab-1 */,
 			);
-			name = "lab-1";
+			name = lab1;
 			packageProductDependencies = (
 			);
 			productName = "lab-1";
-			productReference = 11D199322F46751E00BF920E /* lab-1 */;
+			productReference = 11D199322F46751E00BF920E /* lab1 */;
 			productType = "com.apple.product-type.tool";
+		};
+		11D199772F47020F00BF920E /* BookCLITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D1997C2F47020F00BF920E /* Build configuration list for PBXNativeTarget "BookCLITests" */;
+			buildPhases = (
+				11D199742F47020F00BF920E /* Sources */,
+				11D199752F47020F00BF920E /* Frameworks */,
+				11D199762F47020F00BF920E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				11D199792F47020F00BF920E /* BookCLITests */,
+			);
+			name = BookCLITests;
+			packageProductDependencies = (
+			);
+			productName = BookCLITests;
+			productReference = 11D199782F47020F00BF920E /* BookCLITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,9 +138,12 @@
 					11D199312F46751E00BF920E = {
 						CreatedOnToolsVersion = 26.2;
 					};
+					11D199772F47020F00BF920E = {
+						CreatedOnToolsVersion = 26.2;
+					};
 				};
 			};
-			buildConfigurationList = 11D1992D2F46751E00BF920E /* Build configuration list for PBXProject "lab-1" */;
+			buildConfigurationList = 11D1992D2F46751E00BF920E /* Build configuration list for PBXProject "lab1" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -111,16 +157,35 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11D199312F46751E00BF920E /* lab-1 */,
+				11D199312F46751E00BF920E /* lab1 */,
+				11D199772F47020F00BF920E /* BookCLITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11D199762F47020F00BF920E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11D1992E2F46751E00BF920E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D199742F47020F00BF920E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D199AF2F471F2900BF920E /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +332,44 @@
 			};
 			name = Release;
 		};
+		11D1997D2F47020F00BF920E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itmo.BookCLITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		11D1997E2F47020F00BF920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itmo.BookCLITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11D1992D2F46751E00BF920E /* Build configuration list for PBXProject "lab-1" */ = {
+		11D1992D2F46751E00BF920E /* Build configuration list for PBXProject "lab1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11D199372F46751E00BF920E /* Debug */,
@@ -279,11 +378,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11D199392F46751E00BF920E /* Build configuration list for PBXNativeTarget "lab-1" */ = {
+		11D199392F46751E00BF920E /* Build configuration list for PBXNativeTarget "lab1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11D1993A2F46751E00BF920E /* Debug */,
 				11D1993B2F46751E00BF920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11D1997C2F47020F00BF920E /* Build configuration list for PBXNativeTarget "BookCLITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D1997D2F47020F00BF920E /* Debug */,
+				11D1997E2F47020F00BF920E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
